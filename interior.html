@@ -1,0 +1,233 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo de Plantas de Interior</title>
+        <style>
+            body {
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #f4f4f4;
+            }
+
+            .banner {
+                background-image: url('fotos/figs/header.jpg');
+                /* opacity: 0.5; */
+                background-size: cover;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 36px;
+                font-family: Roboto;
+                position: relative; /* Esto es necesario para posicionar absolutamente los enlaces */
+
+            }
+            .banner h1 {
+                margin: 0; /* Asegura que no haya un margen adicional */
+            }
+
+            .transbox {
+                margin: 0px;
+                background-color: black;
+                border: 1px solid black;
+                opacity: 0.6;
+                height: 500px;
+                width: 100%;
+                text-align: center;
+                line-height: 500px;
+                }
+
+            .transbox p {
+                margin: 5%;
+                font-weight: bold;
+                color: #000000;
+            }
+
+            .navigation {
+                position: absolute;
+                top: 1px; /* Ajusta esto según sea necesario */
+                right: 30px; /* Ajusta esto según sea necesario */
+            }
+            .navigation a {
+                font-size: 14px;
+                color: #fff; /* Asegúrate de que los enlaces sean visibles en el banner */
+                margin-left: 25px; /* Ajusta esto según sea necesario */
+                text-decoration: none; /* Opcional: quitar subrayado de los enlaces */
+            }
+            @media (max-width: 768px) { /* Ajusta este valor según tus puntos de interrupción */
+                .banner-content {
+                    text-align: center;
+                }
+                .navigation {
+                    position: static; /* Hace que los enlaces vuelvan a fluir en el documento normalmente */
+                    text-align: center;
+                    margin-top: 20px; /* Añade espacio por encima de los enlaces en vista móvil */
+                }	
+            }
+            .catalog {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                /* gap: 10px; */
+                padding: 25px;
+
+            }
+            .plant {
+                height: 350px; /* Alto fijo para el contenedor de la planta */
+                width: 250px; /* Ancho fijo para el contenedor de la planta */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+                background: #fff;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            .plant_box {
+                height: 300px; /* Alto fijo para el contenedor de la planta */
+                width: 250px; /* Ancho fijo para el contenedor de la planta */
+                overflow: hidden; /* Ocultar cualquier parte de la imagen que exceda el contenedor */
+            }
+            .plant_box a {
+                text-decoration: none; /* Elimina el subrayado de los enlaces */
+            }
+            .plant_box img {
+                max-width: 100%;
+                align-items: center;
+                height: auto;
+                object-fit: cover; /* Asegurar que la imagen cubra todo el contenedor */
+                object-position: center; /* Centrar la imagen dentro del contenedor */
+                transition: transform 0.3s ease; /* Suaviza la transformación */
+                /* margin-top: 1%; 
+                margin-bottom: 1%; 
+                margin-left: 1%; 
+                margin-right: 1%;  */
+            }
+            .plant_box a:hover img {
+                transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+            }
+            .plant-info {
+                padding: 15px;
+                text-align: center;
+            }
+            .plant-name {
+                font-size: 1.2em;
+                margin-bottom: 5px;
+            }
+            .plant-bid {
+                color: #555;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    
+
+    <body>
+        <div class="banner">
+            <div class="transbox">
+                <h1>Catálogo de Interior</h1>'
+            </div>
+            <div class="navigation">
+                <a href="index.html">Inicio</a>
+                <a href="interior_auto.html">Interior</a>
+                <a href="exterior_auto.html">Exterior</a>
+                <a href="suculentas_auto.html">Suculentas</a>
+                <a href="cactus_auto.html">Cactus</a>
+                <!-- Añade más enlaces si es necesario -->
+            </div>
+        </div>
+        <div class="catalog">
+            <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Begonia_Cleopatra/_DSC1098.jpg">
+                        <img src="fotos/I_Begonia_Cleopatra/_DSC1098.jpg"" alt="Begonia Cleopatra">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Begonia Cleopatra </div>
+                    <div class="plant-bid">Apuesta mínima: $5000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Coleus/_DSC1100_v2.jpg" target="_blank">
+                        <img src="fotos/I_Coleus/_DSC1100_v2.jpg"" alt="Coleus">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Coleus </div>
+                    <div class="plant-bid">Apuesta mínima: $5000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Ficus_Lirata/_DSC1080.jpg" target="_blank">
+                        <img src="fotos/I_Ficus_Lirata/_DSC1080.jpg"" alt="Ficus Lirata">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Ficus Lirata </div>
+                    <div class="plant-bid">Apuesta mínima: $20000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Monstera_Deliciosa_1/_DSC1079_v2.jpg" target="_blank">
+                        <img src="fotos/I_Monstera_Deliciosa_1/_DSC1079_v2.jpg"" alt="Monstera Deliciosa 1">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Monstera Deliciosa 1 </div>
+                    <div class="plant-bid">Apuesta mínima: $20000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Monstera_Deliciosa_2/_DSC1093_v2.jpg" target="_blank">
+                        <img src="fotos/I_Monstera_Deliciosa_2/_DSC1093_v2.jpg"" alt="Monstera Deliciosa 2">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Monstera Deliciosa 2 </div>
+                    <div class="plant-bid">Apuesta mínima: $10000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Peperomia_Polybotrya/_DSC1062_v2.jpg" target="_blank">
+                        <img src="fotos/I_Peperomia_Polybotrya/_DSC1062_v2.jpg"" alt="Peperomia Polybotrya">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Peperomia Polybotrya </div>
+                    <div class="plant-bid">Apuesta mínima: $10000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Potus/_DSC1090_v2.jpg" target="_blank">
+                        <img src="fotos/I_Potus/_DSC1090_v2.jpg"" alt="Potus">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Potus </div>
+                    <div class="plant-bid">Apuesta mínima: $10000</div>
+                </div>
+        </div>
+        <div class="plant">
+                <div class="plant_box"
+                    <a href="fotos/I_Sansiveria_1/_DSC1096_v2.jpg" target="_blank">
+                        <img src="fotos/I_Sansiveria_1/_DSC1096_v2.jpg"" alt="Sansiveria_1">
+                    </a>
+                </div>
+                <div class="plant-info">
+                    <div class="plant-name">Sansiveria_1 </div>
+                    <div class="plant-bid">Apuesta mínima: $10000</div>
+                </div>
+        </div>
+</body>
+</html>
