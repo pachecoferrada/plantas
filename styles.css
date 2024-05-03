@@ -8,7 +8,7 @@ body {
 }
 
 .banner {
-    background-image: url('figs/header.JPG');
+    background-image: 'figs/header.JPG';
     /* opacity: 0.5; */
     background-size: cover;
     height: 500px;
@@ -108,10 +108,11 @@ body {
     text-align: center;
 }
 .plant-name {
-    font-size: 1.2em;
+    font-size: 1.em;
     margin-bottom: 5px;
 }
 .plant-bid {
+    font-size: .8em;
     color: #555;
     padding: 10px;
     margin-bottom: 10px;
