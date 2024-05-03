@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subasta de Plantas</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -12,7 +13,7 @@
             background: #f4f4f4;
         }
 		.banner {
-            background-image: url('fotos/figs/header.jpg');
+            background-image: url('figs/header.jpg');
             /* opacity: 0.5; */
             background-size: cover;
             height: 500px;
@@ -112,6 +113,7 @@
 
         }
     </style>
+
 </head>
 <body>
 
@@ -121,17 +123,19 @@
         </div>
         <div class="navigation">
             <a href="index.html">Inicio</a>
-            <a href="interior_auto.html">Interior</a>
+            <a href="plantas.html">Plantas</a>
+            <a href="casa.html">Casa</a>
+            <!-- <a href="interior_auto.html">Interior</a>
             <a href="exterior_auto.html">Exterior</a>
             <a href="suculentas_auto.html">Suculentas</a>
-            <a href="cactus_auto.html">Cactus</a>
+            <a href="cactus_auto.html">Cactus</a> -->
             <!-- Añade más enlaces si es necesario -->
         </div>
     </div>
 
     <div class="description">
-        <h1>Plantas al mejor postor!!!</h1>
-        <p>Bienvenidos y bienvenidas a nuestra subasta ciega. La cosa es simple:</p>
+        <h1>Nos vamos y lo vendemos todo!!!</h1>
+        <p>Bienvenidos y bienvenidas a nuestra venta de garage. La cosa es simple:</p>
         <!-- <ul>
             <li>Revise nuestro catálogo de plantas a continuación.</li>
             <li>Si le gusta una planta y quiere ofertar por ella, haga click en nombre y rellene formulario de oferta.</li>
@@ -139,35 +143,24 @@
             <li>La planta se adjudicará a la oferta más alta. En caso de empate, se adjudicará a quien haya ofertado primero.</li>
         </ul> -->
         <ul>
-            <p>1. Revise nuestro catálogo de plantas a continuación.</p>
-            <p>2. Si le gusta una planta y quiere ofertar por ella, haga click en nombre y rellene formulario de oferta.</p>
-            <p>3. La subasta se cerrará el día Domingo XX de Mayo de 2024 a las 22:00.</p>
-            <p>4. La planta se adjudicará a la oferta más alta. En caso de empate, se adjudicará a quien haya ofertado primero.</p>
+            <p>1. Revise nuestro catálogo a continuación.</p>
+            <p>2. Si le gusta algo y quiere ofertar por ella, haga click en nombre y rellene formulario de oferta.</p>
         </ul>
     </div>
 
     <div class="grid">
         <!-- Añade una sección por cada categoría de planta -->
-	    <!-- Bloque de 'Cactus' -->
-		<div class="plant-item" onclick="location.href='cactus.html';">
-			<img src="https://raw.githubusercontent.com/pachecoferrada/plantas/97846218309eb1f260c497980e296c889df49155/figs/cactus.JPG" alt="Cactus" onclick="location.href='pagina_de_cactus.html';">
-			<div class="plant-name">Cactus</div>
+	    <!-- Bloque de 'Plantas' -->
+		<div class="plant-item" onclick="location.href='plantas.html';">
+			<img src="figs/cactus.JPG" alt="Plantas" onclick="location.href='plantas.html';">
+			<div class="plant-name">Plantas</div>
 		</div>
-	    <!-- Bloque de 'Exterior' -->
-	    <div class="plant-item" onclick="location.href='exterior.html';">
-			<img src="https://raw.githubusercontent.com/pachecoferrada/plantas/97846218309eb1f260c497980e296c889df49155/figs/exterior.JPG" alt="Exterior">
-			<div class="plant-name">Exterior</div>
+
+	    <!-- Bloque de 'Casa' -->
+	    <div class="plant-item" onclick="location.href='casa.html';">
+			<img src="/figs/cactus.JPG" alt="Casa" onclick="location.href='casa.html';">
+			<div class="plant-name">Casa</div>
 	    </div>
-		<!-- Bloque de 'Interior' -->
-		<div class="plant-item" onclick="location.href='interior.html';">
-			<img src="https://raw.githubusercontent.com/pachecoferrada/plantas/97846218309eb1f260c497980e296c889df49155/figs/interior.JPG" alt="Interior">
-			<div class="plant-name">Interior</div>
-		</div>
-		<!-- Bloque de 'Suculentas' -->
-		<div class="plant-item" onclick="location.href='suculentas.html';">
-			<img src="https://raw.githubusercontent.com/pachecoferrada/plantas/97846218309eb1f260c497980e296c889df49155/figs/suculentas.JPG" alt="Suculentas">
-			<div class="plant-name">Suculentas</div>
-		</div>
     </div>
 
     <script>
