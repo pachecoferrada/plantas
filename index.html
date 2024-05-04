@@ -6,116 +6,9 @@
     <title>Subasta de Plantas</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-		.banner {
-            background-image: 'figs/header.JPG';
-            /* opacity: 0.5; */
-            background-size: cover;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 36px;
-            font-family: Roboto;
-			position: relative; /* Esto es necesario para posicionar absolutamente los enlaces */
-
-        }
-		.banner h1 {
-			margin: 0; /* Asegura que no haya un margen adicional */
-		}
-
-        .transbox {
-            margin: 0px;
-            background-color: black;
-            border: 1px solid black;
-            opacity: 0.6;
-            height: 500px;
-            width: 100%;
-            text-align: center;
-            line-height: 500px;
-            }
-
-        .transbox p {
-            margin: 5%;
-            font-weight: bold;
-            color: #000000;
-        }
-
-		
-		.navigation {
-			position: absolute;
-			top: 1px; /* Ajusta esto según sea necesario */
-			right: 30px; /* Ajusta esto según sea necesario */
-
-		}
-
-		.navigation a {
-            font-size: 14px;
-			color: #fff; /* Asegúrate de que los enlaces sean visibles en el banner */
-			margin-left: 25px; /* Ajusta esto según sea necesario */
-			text-decoration: none; /* Opcional: quitar subrayado de los enlaces */
-		}
-
-		@media (max-width: 768px) { /* Ajusta este valor según tus puntos de interrupción */
-			.banner-content {
-				text-align: center;
-
-			}
-			.navigation {
-				position: static; /* Hace que los enlaces vuelvan a fluir en el documento normalmente */
-				text-align: center;
-				margin-top: 20px; /* Añade espacio por encima de los enlaces en vista móvil */
-
-			}	
-		}
-        .description {
-            padding: 20px;
-            background: #f0f0f0;
-            justify-content: center;
-            font-family:Roboto light;
-            text-align: center;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            padding: 10px;
-        }
-        .plant-item {
-            text-align: center; /* Centra el texto bajo la imagen */
-            cursor: pointer;
-        }
-        .plant-item img {
-            width: 250px;
-            height: 400px;
-
-            /* display: flex; */
-            align-items: center;
-
-            border: 5px solid black;
-            /* padding: 20px; */
-        }
-        .plant-item img:hover {
-            opacity: 0.5;
-        }
-        .plant-name {
-            margin-top: 5px; /* Espacio entre la imagen y el texto */
-            font-size: 24px; /* Tamaño del texto */
-			font-family:Roboto light;
-			font-weight: bold;
-            /* <!-- background: #f1f0f0; -->*/
-
-        }
-    </style>
+ 
 
 </head>
 <body>
@@ -128,11 +21,7 @@
             <a href="index.html">Inicio</a>
             <a href="plantas.html">Plantas</a>
             <a href="casa.html">Casa</a>
-            <!-- <a href="interior_auto.html">Interior</a>
-            <a href="exterior_auto.html">Exterior</a>
-            <a href="suculentas_auto.html">Suculentas</a>
-            <a href="cactus_auto.html">Cactus</a> -->
-            <!-- Añade más enlaces si es necesario -->
+
         </div>
     </div>
 
@@ -154,16 +43,22 @@
     <div class="grid">
         <!-- Añade una sección por cada categoría de planta -->
 	    <!-- Bloque de 'Plantas' -->
-		<div class="plant-item" onclick="location.href='plantas.html';">
+		<div class="section-item" onclick="location.href='plantas.html';">
 			<img src="figs/cactus.JPG" alt="Plantas" onclick="location.href='plantas.html';">
-			<div class="plant-name">Plantas</div>
+			<div class="section-name">Plantas</div>
 		</div>
 
 	    <!-- Bloque de 'Casa' -->
-	    <div class="plant-item" onclick="location.href='casa.html';">
-			<img src="/figs/cactus.JPG" alt="Casa" onclick="location.href='casa.html';">
-			<div class="plant-name">Casa</div>
-	    </div>
+
+        <div class="section-item" onclick="location.href='casa.html';">
+            <img src="figs/casa/mesa1.JPG" alt="Casa">
+            <div class="section-name">Casa</div>
+        </div>
+
+	    <!-- <div class="section-item" onclick="location.href='casa.html';">
+			<img src="/figs/casa/mesa1.JPG" alt="Casa" onclick="location.href='casa.html';">
+			<div class="section-name">Casa</div>
+	    </div> -->
     </div>
 
     <script>

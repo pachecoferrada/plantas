@@ -9,67 +9,151 @@ body {
 
 .banner {
     background-image: url('figs/header.JPG');
-    /* opacity: 0.5; */
     background-size: cover;
     height: 400px;
     display: flex;
+    flex-direction: column; /* Cambiado a columna para alinear verticalmente */
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 32px;
-    font-family: Roboto;
-    position: relative; /* Esto es necesario para posicionar absolutamente los enlaces */
-
+    position: relative;
 }
+
 .banner h1 {
-    margin: 0; /* Asegura que no haya un margen adicional */
-}
-
-.transbox {
-    margin: 0px;
-    background-color: black;
-    border: 1px solid black;
-    opacity: 0.6;
-    height: 400px;
-    width: 100%;
-    text-align: center;
-    }
-.transbox-title {
-    margin: 0px;
-    border: 1px solid black;
-     margin-top:100px;
-    height: 300px;
-    width: 100%;
-    text-align: center;
-    }
-
-.transbox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+    margin: 0;
+    padding-top: 20px; /* Espacio sobre el título si es necesario */
+    text-align: center; /* Asegura que el título esté centrado */
 }
 
 .navigation {
     position: absolute;
-    top: 1px; /* Ajusta esto según sea necesario */
-    right: 30px; /* Ajusta esto según sea necesario */
+    top: 10px; /* Ajusta a la parte superior del banner */
+    right: 30px; /* Ajusta a la derecha del banner */
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center; /* Alinea los enlaces verticalmente en el centro */
 }
+
 .navigation a {
     font-size: 14px;
-    color: #fff; /* Asegúrate de que los enlaces sean visibles en el banner */
-    margin-left: 25px; /* Ajusta esto según sea necesario */
-    text-decoration: none; /* Opcional: quitar subrayado de los enlaces */
+    color: #fff;
+    margin-left: 25px; /* Espacio entre enlaces */
+    text-decoration: none;
 }
-@media (max-width: 768px) { /* Ajusta este valor según tus puntos de interrupción */
-    .banner-content {
-        text-align: center;
+
+@media (max-width: 768px) {
+    .banner {
+        height: 150px; /* Altura auto para acomodar contenido en menos espacio */
+        padding: 20px 0; /* Agrega algo de padding vertical */
     }
     .navigation {
-        position: static; /* Hace que los enlaces vuelvan a fluir en el documento normalmente */
-        text-align: center;
-        margin-top: 20px; /* Añade espacio por encima de los enlaces en vista móvil */
-    }	
+        position: static; /* Los enlaces vuelven a fluir normalmente */
+        width: 100%; /* Ocupa todo el ancho */
+        justify-content: center; /* Centra los enlaces horizontalmente */
+        margin-bottom: 20px; /* Espacio antes del título */
+
+    }
+    .navigation a {
+        font-size: 12px;
+    }
+    
+    .banner h1 {
+        font-size: 36px; /* Reduce el tamaño del título para pantallas pequeñas */
+    }
 }
+
+
+/* SORT, PAGINATION AND SEARCH */
+
+.sort-pagination-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sorting {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+}
+
+.sorting label  {
+    margin-right: 10px;
+}
+
+.search-container {
+    padding: 20px 25px;
+    background-color: white;
+    width: 35%;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+#searchBox {
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .sort-pagination-container {
+        flex-direction: column; /* Cambia a disposición en columna en pantallas pequeñas */
+    }
+
+    .sorting, .search-container {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+/* index */
+
+.description {
+    padding: 20px;
+    background: #f0f0f0;
+    justify-content: center;
+    font-family:Roboto light;
+    text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.section-item {
+    text-align: center; /* Centra el texto bajo la imagen */
+    cursor: pointer;
+}
+.section-item img {
+    width: 250px;
+    height: 400px;
+
+    /* display: flex; */
+    align-items: center;
+
+    border: 5px solid black;
+    /* padding: 20px; */
+}
+.section-item img:hover {
+    opacity: 0.5;
+}
+.section-name {
+    margin-top: 5px; /* Espacio entre la imagen y el texto */
+    font-size: 24px; /* Tamaño del texto */
+    font-family:Roboto light;
+    font-weight: bold;
+    /* <!-- background: #f1f0f0; -->*/
+
+}
+/* CATALOG */
 .catalog {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
