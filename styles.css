@@ -37,8 +37,7 @@ body {
 .transbox-title {
     margin: 0px;
     border: 1px solid black;
-    opacity: 0.6;
-    margin-top:100px;
+     margin-top:100px;
     height: 300px;
     width: 100%;
     text-align: center;
@@ -88,13 +87,30 @@ body {
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.plant a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-}
 .plant_box {
+    margin-top:5px;
     height: 300px; /* Alto fijo para el contenedor de la planta */
     width: 250px; /* Ancho fijo para el contenedor de la planta */
     overflow: hidden; /* Ocultar cualquier parte de la imagen que exceda el contenedor */
+    position: relative;
+}
+.plant_box a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.icon-overlay {
+    position: absolute;
+    width: 35px; /* Ancho fijo para el contenedor de la planta */
+    top: 10px;
+    right: 10px;
+    z-index: 1; /* Asegura que el icono esté encima de la imagen principal */
+}
+
+.icon-overlay:hover {
+    /* Estilos adicionales cuando el cursor se encuentra sobre el icono */
+    /* Por ejemplo, cambiar el color o la opacidad */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+    opacity: 0.9;
 }
 .plant img {
     max-width: 100%;
@@ -110,6 +126,8 @@ body {
 }
 .plant a:hover img {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+    opacity: 0.9;
+
 }
 .plant-info {
     padding: 15px;
@@ -117,11 +135,19 @@ body {
 }
 .plant-name {
     font-size: 1.em;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
-.plant-bid {
-    font-size: .8em;
+.plant-description {
+    font-size: .7em;
+    /* color: #000 ; */
     color: #555;
-    padding: 10px;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+
+.plant-bid {
+    font-size: .85em;
+    font-weight: bold;
+    padding: 5px;
     margin-bottom: 1px;
 }
