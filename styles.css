@@ -108,7 +108,7 @@ body {
     }
 
     .sorting, .search-container {
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: 300px; /* Ocupa todo el ancho disponible */
     }
 }
 
@@ -179,9 +179,9 @@ body {
 
 .icon-overlay {
     position: absolute;
-    width: 35px; /* Ancho fijo para el contenedor de la planta */
+    width: 50px; /* Ancho fijo para el contenedor de la planta */
     top: 10px;
-    right: 10px;
+    right: 5px;
     z-index: 1; /* Asegura que el icono esté encima de la imagen principal */
 }
 
@@ -209,12 +209,12 @@ body {
 
 }
 .plant-info {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 .plant-name {
-    font-size: 1.em;
-    margin-bottom: 3px;
+    font-size: .9em;
+    margin-bottom: 2px;
 }
 .plant-description {
     font-size: .7em;

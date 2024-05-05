@@ -87,5 +87,6 @@ function normalizeText(text) {
 }
 
 window.onload = () => {
+    sortProducts('nameAsc'); // Orden alfabético por defecto
     renderCatalog();
 };
