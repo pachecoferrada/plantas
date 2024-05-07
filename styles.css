@@ -152,7 +152,7 @@ body {
 /* CATALOG */
 .catalog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 25px;
 
 }
@@ -162,7 +162,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -209,8 +209,11 @@ body {
 
 }
 .plant-info {
-    padding: 10px;
+    min-height: auto;
+    padding: 5px;
+    margin-top: 1px;
     text-align: center;
+    vertical-align: text-top;
 }
 .plant-name {
     font-size: .9em;
@@ -220,7 +223,7 @@ body {
     font-size: .7em;
     /* color: #000 ; */
     color: #555;
-    padding: 5px;
+    padding: 1px;
     margin-bottom: 1px;
 }
 
