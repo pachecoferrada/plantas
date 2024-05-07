@@ -20,11 +20,13 @@
         <div class="sorting">
             <label for="sortOptions">Ordenar por:</label>
             <select id="sortOptions">
+                <option value="recommended" selected>Recomendados</option>
                 <option value="priceAsc">Menor a mayor valor</option>
                 <option value="priceDesc">Mayor a menor valor</option>
-                <option value="nameAsc" selected>Orden alfabético: A a la Z</option>
-                <option value="nameDesc">Orden alfabético inverso: Z a la A</option>
+                <option value="nameAsc">A a la Z</option>
+                <option value="nameDesc">Z a la A</option>
             </select>
+
         </div>
 
         <div class="search-container">
@@ -33,7 +35,7 @@
     </div>
     <div class="catalog">
      
-        <div class="plant">
+        <div class="plant" data-ranking="5">
             <div class="plant_box">
                 <a href="figs/plantas/083.JPG" target="_blank">
                     <img src="figs/plantas/083.JPG" alt="Aeonium arboreum morado">
@@ -49,7 +51,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="10">
             <div class="plant_box">
                 <a href="figs/plantas/082.JPG" target="_blank">
                     <img src="figs/plantas/082.JPG" alt="Aeonium arboreum verde">
@@ -65,7 +67,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/048.JPG" target="_blank">
                     <img src="figs/plantas/048.JPG" alt="Aeonium haworthii">
@@ -81,7 +83,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/039.JPG" target="_blank">
                     <img src="figs/plantas/039.JPG" alt="Aeonium haworthii">
@@ -97,7 +99,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
             <div class="plant_box">
                 <a href="figs/plantas/064.JPG" target="_blank">
                     <img src="figs/plantas/064.JPG" alt="Austrocylindropuntia vestita">
@@ -113,7 +115,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="5">
             <div class="plant_box">
                 <a href="figs/plantas/118.JPG" target="_blank">
                     <img src="figs/plantas/118.JPG" alt="Begonia Cleopatra">
@@ -129,7 +131,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/095.JPG" target="_blank">
                     <img src="figs/plantas/095.JPG" alt="Begonia bowerae">
@@ -145,7 +147,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="6">
             <div class="plant_box">
                 <a href="figs/plantas/099.JPG" target="_blank">
                     <img src="figs/plantas/099.JPG" alt="Cactus Cerebro">
@@ -161,7 +163,23 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="7">
+            <div class="plant_box">
+                <a href="figs/plantas/072.JPG" target="_blank">
+                    <img src="figs/plantas/072.JPG" alt="Cactus Epiphyllum">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Cactus Epiphyllum </div>
+                <div class="plant-description">Macetero plástico mediano  </div>
+                <div class="plant-bid">Valor: $5.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="10">
             <div class="plant_box">
                 <a href="figs/plantas/014.JPG" target="_blank">
                     <img src="figs/plantas/014.JPG" alt="Cactus San Pedro ">
@@ -177,26 +195,10 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/097.JPG" target="_blank">
-                    <img src="figs/plantas/097.JPG" alt="Chlorophytum comosum "Cinta"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Chlorophytum comosum "Cinta" </div>
-                <div class="plant-description">Macetero plástico mediano, tiene 1 brote  </div>
-                <div class="plant-bid">Valor: $4.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/096.JPG" target="_blank">
-                    <img src="figs/plantas/096.JPG" alt="Chlorophytum comosum "Cinta"">
+                    <img src="figs/plantas/096.JPG" alt="Chlorophytum comosum 'Cinta'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -209,7 +211,23 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/097.JPG" target="_blank">
+                    <img src="figs/plantas/097.JPG" alt="Chlorophytum comosum 'Cinta'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Chlorophytum comosum "Cinta" </div>
+                <div class="plant-description">Macetero plástico mediano, tiene 1 brote  </div>
+                <div class="plant-bid">Valor: $4.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/107.JPG" target="_blank">
                     <img src="figs/plantas/107.JPG" alt="Coleo">
@@ -225,74 +243,10 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/024.JPG" target="_blank">
-                    <img src="figs/plantas/024.JPG" alt="Corpuscularia lehmannii "Planta de Hielo"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
-                <div class="plant-description">Macetero de plástico  </div>
-                <div class="plant-bid">Valor: $3.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/070.JPG" target="_blank">
-                    <img src="figs/plantas/070.JPG" alt="Corpuscularia lehmannii "Planta de Hielo"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
-                <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $2.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/059.JPG" target="_blank">
-                    <img src="figs/plantas/059.JPG" alt="Corpuscularia lehmannii "Planta de Hielo"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
-                <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $3.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/055.JPG" target="_blank">
-                    <img src="figs/plantas/055.JPG" alt="Corpuscularia lehmannii "Planta de Hielo"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
-                <div class="plant-description">Macetero reciclado de neumáticos pequeño  </div>
-                <div class="plant-bid">Valor: $1.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="6">
             <div class="plant_box">
                 <a href="figs/plantas/063.JPG" target="_blank">
-                    <img src="figs/plantas/063.JPG" alt="Corpuscularia lehmannii "Planta de Hielo"">
+                    <img src="figs/plantas/063.JPG" alt="Corpuscularia lehmannii 'Planta de Hielo'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -305,7 +259,71 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/070.JPG" target="_blank">
+                    <img src="figs/plantas/070.JPG" alt="Corpuscularia lehmannii 'Planta de Hielo'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
+                <div class="plant-description">Macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $2.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/059.JPG" target="_blank">
+                    <img src="figs/plantas/059.JPG" alt="Corpuscularia lehmannii 'Planta de Hielo'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
+                <div class="plant-description">Macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $3.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/055.JPG" target="_blank">
+                    <img src="figs/plantas/055.JPG" alt="Corpuscularia lehmannii 'Planta de Hielo'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
+                <div class="plant-description">Macetero reciclado de neumáticos pequeño  </div>
+                <div class="plant-bid">Valor: $1.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/024.JPG" target="_blank">
+                    <img src="figs/plantas/024.JPG" alt="Corpuscularia lehmannii 'Planta de Hielo'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Corpuscularia lehmannii "Planta de Hielo" </div>
+                <div class="plant-description">Macetero de plástico  </div>
+                <div class="plant-bid">Valor: $3.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/019.JPG" target="_blank">
                     <img src="figs/plantas/019.JPG" alt="Crassula Green Pagoda">
@@ -321,7 +339,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/013.JPG" target="_blank">
                     <img src="figs/plantas/013.JPG" alt="Crassula Mesembryanthemoides">
@@ -337,10 +355,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/016.JPG" target="_blank">
-                    <img src="figs/plantas/016.JPG" alt="Crassula Tom Thumb + Sempervivum calcareum  "Uña de mujer"">
+                    <img src="figs/plantas/016.JPG" alt="Crassula Tom Thumb + Sempervivum calcareum  'Uña de mujer'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -353,10 +371,26 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/126.JPG" target="_blank">
+                    <img src="figs/plantas/126.JPG" alt="Crassula capitella">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Crassula capitella </div>
+                <div class="plant-description">Macetero Arena mediano  </div>
+                <div class="plant-bid">Valor: $3.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/062.JPG" target="_blank">
-                    <img src="figs/plantas/062.JPG" alt="Crassula mesembryanthemoides "Tenelli"">
+                    <img src="figs/plantas/062.JPG" alt="Crassula mesembryanthemoides 'Tenelli'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -369,10 +403,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/049.JPG" target="_blank">
-                    <img src="figs/plantas/049.JPG" alt="Crassula muscosa "Cordón de San José"">
+                    <img src="figs/plantas/049.JPG" alt="Crassula muscosa 'Cordón de San José'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -385,26 +419,10 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/025.JPG" target="_blank">
-                    <img src="figs/plantas/025.JPG" alt="Crassula ovata "Gollum"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Crassula ovata "Gollum" </div>
-                <div class="plant-description">Macetero de cerámica   </div>
-                <div class="plant-bid">Valor: $3.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/045.JPG" target="_blank">
-                    <img src="figs/plantas/045.JPG" alt="Crassula ovata "Gollum"">
+                    <img src="figs/plantas/045.JPG" alt="Crassula ovata 'Gollum'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -417,10 +435,26 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/025.JPG" target="_blank">
+                    <img src="figs/plantas/025.JPG" alt="Crassula ovata 'Gollum'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Crassula ovata "Gollum" </div>
+                <div class="plant-description">Macetero de cerámica   </div>
+                <div class="plant-bid">Valor: $3.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="10">
             <div class="plant_box">
                 <a href="figs/plantas/124.JPG" target="_blank">
-                    <img src="figs/plantas/124.JPG" alt="Crassula ovata "Jade"">
+                    <img src="figs/plantas/124.JPG" alt="Crassula ovata 'Jade'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -433,10 +467,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="3">
             <div class="plant_box">
                 <a href="figs/plantas/018.JPG" target="_blank">
-                    <img src="figs/plantas/018.JPG" alt="Crassula ovata "Jade" + Othonna Capensis "Collar de rubí"">
+                    <img src="figs/plantas/018.JPG" alt="Crassula ovata 'Jade' + Othonna Capensis 'Collar de rubí'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -449,7 +483,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/026.JPG" target="_blank">
                     <img src="figs/plantas/026.JPG" alt="Crassula ovata variegata">
@@ -465,10 +499,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="8">
             <div class="plant_box">
                 <a href="figs/plantas/077.JPG" target="_blank">
-                    <img src="figs/plantas/077.JPG" alt="Crassula perforata "Anticucho"">
+                    <img src="figs/plantas/077.JPG" alt="Crassula perforata 'Anticucho'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -481,7 +515,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/011.JPG" target="_blank">
                     <img src="figs/plantas/011.JPG" alt="Crassula rogersii">
@@ -497,7 +531,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/032.JPG" target="_blank">
                     <img src="figs/plantas/032.JPG" alt="Crassula rogersii">
@@ -513,23 +547,23 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="3">
             <div class="plant_box">
                 <a href="figs/plantas/114.JPG" target="_blank">
-                    <img src="figs/plantas/114.JPG" alt="Crasula Muscosa">
+                    <img src="figs/plantas/114.JPG" alt="Crasula Muscosa 'Cordón de San José">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Crasula Muscosa </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $15.000</div>
+                <div class="plant-name">Crasula Muscosa "Cordón de San José </div>
+                <div class="plant-description">Macetero cerámica mediano  </div>
+                <div class="plant-bid">Valor: $10.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/108.JPG" target="_blank">
                     <img src="figs/plantas/108.JPG" alt="Crasula Perforata">
@@ -545,7 +579,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/105.JPG" target="_blank">
                     <img src="figs/plantas/105.JPG" alt="Crasula Rogersii">
@@ -561,7 +595,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="5">
             <div class="plant_box">
                 <a href="figs/plantas/119.JPG" target="_blank">
                     <img src="figs/plantas/119.JPG" alt="Dracaena de hoja fina">
@@ -577,10 +611,26 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/125.JPG" target="_blank">
+                    <img src="figs/plantas/125.JPG" alt="Echeveria ">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Echeveria  </div>
+                <div class="plant-description">Macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $2.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="1">
             <div class="plant_box">
                 <a href="figs/plantas/122.JPG" target="_blank">
-                    <img src="figs/plantas/122.JPG" alt="Epipremnum aureum "Potus"">
+                    <img src="figs/plantas/122.JPG" alt="Epipremnum aureum 'Potus'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -593,7 +643,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
             <div class="plant_box">
                 <a href="figs/plantas/017.JPG" target="_blank">
                     <img src="figs/plantas/017.JPG" alt="Euphorbia Trigona">
@@ -609,10 +659,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/060.JPG" target="_blank">
-                    <img src="figs/plantas/060.JPG" alt="Euphorbia milii "Corona de Cristo" + Corpuscularia lehmannii "Planta de Hielo"">
+                    <img src="figs/plantas/060.JPG" alt="Euphorbia milii 'Corona de Cristo' + Corpuscularia lehmannii 'Planta de Hielo'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -625,7 +675,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="1">
             <div class="plant_box">
                 <a href="figs/plantas/109.JPG" target="_blank">
                     <img src="figs/plantas/109.JPG" alt="Ficus Lirata">
@@ -641,7 +691,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="10">
             <div class="plant_box">
                 <a href="figs/plantas/004.JPG" target="_blank">
                     <img src="figs/plantas/004.JPG" alt="Gasteria brachyohylla (Suculenta) + Mammillaria vetula (cactus)">
@@ -657,39 +707,7 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/005.JPG" target="_blank">
-                    <img src="figs/plantas/005.JPG" alt="Graptosedum Bronze">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Graptosedum Bronze </div>
-                <div class="plant-description">Suculenta pequeña, macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $2.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/042.JPG" target="_blank">
-                    <img src="figs/plantas/042.JPG" alt="Graptosedum Bronze">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Graptosedum Bronze </div>
-                <div class="plant-description">Bien desarrollada, en taza con agujero   </div>
-                <div class="plant-bid">Valor: $2.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/012.JPG" target="_blank">
                     <img src="figs/plantas/012.JPG" alt="Graptosedum Bronze">
@@ -705,7 +723,39 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/005.JPG" target="_blank">
+                    <img src="figs/plantas/005.JPG" alt="Graptosedum Bronze">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Graptosedum Bronze </div>
+                <div class="plant-description">Suculenta pequeña, macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $2.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/042.JPG" target="_blank">
+                    <img src="figs/plantas/042.JPG" alt="Graptosedum Bronze">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Graptosedum Bronze </div>
+                <div class="plant-description">Bien desarrollada, en taza con agujero   </div>
+                <div class="plant-bid">Valor: $2.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/010.JPG" target="_blank">
                     <img src="figs/plantas/010.JPG" alt="Haworthia cuspidata">
@@ -721,55 +771,7 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/066.JPG" target="_blank">
-                    <img src="figs/plantas/066.JPG" alt="Haworthia cymbiformis">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Haworthia cymbiformis </div>
-                <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $5.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/103.JPG" target="_blank">
-                    <img src="figs/plantas/103.JPG" alt="Haworthia cymbiformis">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Haworthia cymbiformis </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $2.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/101.JPG" target="_blank">
-                    <img src="figs/plantas/101.JPG" alt="Haworthia cymbiformis">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Haworthia cymbiformis </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $2.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/093.JPG" target="_blank">
                     <img src="figs/plantas/093.JPG" alt="Haworthia cymbiformis">
@@ -785,7 +787,55 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="3">
+            <div class="plant_box">
+                <a href="figs/plantas/066.JPG" target="_blank">
+                    <img src="figs/plantas/066.JPG" alt="Haworthia cymbiformis">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Haworthia cymbiformis </div>
+                <div class="plant-description">Macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $5.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/103.JPG" target="_blank">
+                    <img src="figs/plantas/103.JPG" alt="Haworthia cymbiformis">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Haworthia cymbiformis </div>
+                <div class="plant-description">  </div>
+                <div class="plant-bid">Valor: $2.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/101.JPG" target="_blank">
+                    <img src="figs/plantas/101.JPG" alt="Haworthia cymbiformis">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Haworthia cymbiformis </div>
+                <div class="plant-description">  </div>
+                <div class="plant-bid">Valor: $2.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="8">
             <div class="plant_box">
                 <a href="figs/plantas/084.JPG" target="_blank">
                     <img src="figs/plantas/084.JPG" alt="Jade (Crassula ovata)">
@@ -801,10 +851,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="6">
             <div class="plant_box">
                 <a href="figs/plantas/078.JPG" target="_blank">
-                    <img src="figs/plantas/078.JPG" alt="Jade variegado + "Planta de hielo" +">
+                    <img src="figs/plantas/078.JPG" alt="Jade variegado + 'Planta de hielo' +">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -817,7 +867,23 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/106.JPG" target="_blank">
+                    <img src="figs/plantas/106.JPG" alt="Kalanchoe Alticola">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Kalanchoe Alticola </div>
+                <div class="plant-description">Macetero metalico mediano  </div>
+                <div class="plant-bid">Valor: $5.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/028.JPG" target="_blank">
                     <img src="figs/plantas/028.JPG" alt="Kalanchoe Alticola (en flor)">
@@ -833,7 +899,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/021.JPG" target="_blank">
                     <img src="figs/plantas/021.JPG" alt="Kalanchoe Alticola (en flor)">
@@ -849,7 +915,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="9">
             <div class="plant_box">
                 <a href="figs/plantas/015.JPG" target="_blank">
                     <img src="figs/plantas/015.JPG" alt="Mammillaria gracilis (cactus)">
@@ -865,10 +931,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/071.JPG" target="_blank">
-                    <img src="figs/plantas/071.JPG" alt="Mammillaria vetula "Biznaga"">
+                    <img src="figs/plantas/071.JPG" alt="Mammillaria vetula 'Biznaga'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -881,7 +947,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/051.JPG" target="_blank">
                     <img src="figs/plantas/051.JPG" alt="Mammillaria vetula (cactus)">
@@ -897,7 +963,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="7">
             <div class="plant_box">
                 <a href="figs/plantas/008.JPG" target="_blank">
                     <img src="figs/plantas/008.JPG" alt="Mix Haworthia cymbiformis">
@@ -913,7 +979,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="3">
             <div class="plant_box">
                 <a href="figs/plantas/022.JPG" target="_blank">
                     <img src="figs/plantas/022.JPG" alt="Mix Suculentas Crassula muscosa  + Crassula Green Pagoda ">
@@ -929,26 +995,10 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/006.JPG" target="_blank">
-                    <img src="figs/plantas/006.JPG" alt="Mix Suculentas Crassula muscosa "Cordón de San José" + Crassula congesta "Judías verdes" + Kalanchoe Alticola">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Mix Suculentas Crassula muscosa "Cordón de San José" + Crassula congesta "Judías verdes" + Kalanchoe Alticola </div>
-                <div class="plant-description">Mix de 3 suculentas, macetero pequeño plástico rectangular  </div>
-                <div class="plant-bid">Valor: $8.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="6">
             <div class="plant_box">
                 <a href="figs/plantas/102.JPG" target="_blank">
-                    <img src="figs/plantas/102.JPG" alt="Mix Suculentas Crassula muscosa "Cordón de San José" + Crassula congesta "Judías verdes" + Kalanchoe Alticola">
+                    <img src="figs/plantas/102.JPG" alt="Mix Suculentas Crassula muscosa 'Cordón de San José' + Crassula congesta 'Judías verdes' + Kalanchoe Alticola">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -957,14 +1007,30 @@
             <div class="plant-info">
                 <div class="plant-name">Mix Suculentas Crassula muscosa "Cordón de San José" + Crassula congesta "Judías verdes" + Kalanchoe Alticola </div>
                 <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $3.000</div>
+                <div class="plant-bid">Valor: $5.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="20">
+            <div class="plant_box">
+                <a href="figs/plantas/006.JPG" target="_blank">
+                    <img src="figs/plantas/006.JPG" alt="Mix Suculentas Crassula muscosa 'Cordón de San José' + Crassula congesta 'Judías verdes' + Kalanchoe Alticola">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Mix Suculentas Crassula muscosa "Cordón de San José" + Crassula congesta "Judías verdes" + Kalanchoe Alticola </div>
+                <div class="plant-description">Mix de 3 suculentas, macetero pequeño plástico rectangular  </div>
+                <div class="plant-bid">Valor: $4.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="20">
             <div class="plant_box">
                 <a href="figs/plantas/009.JPG" target="_blank">
-                    <img src="figs/plantas/009.JPG" alt="Mix Suculentas Sempervivum arachnoideum "Siempreviva de arañas" + Crassula muscosa "Cordón de San José" + Haworthia cymbiformis">
+                    <img src="figs/plantas/009.JPG" alt="Mix Suculentas Sempervivum arachnoideum 'Siempreviva de arañas' + Crassula muscosa 'Cordón de San José' + Haworthia cymbiformis">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -973,11 +1039,11 @@
             <div class="plant-info">
                 <div class="plant-name">Mix Suculentas Sempervivum arachnoideum "Siempreviva de arañas" + Crassula muscosa "Cordón de San José" + Haworthia cymbiformis </div>
                 <div class="plant-description">Mix de 3 suculentas, macetero pequeño plástico rectangular  </div>
-                <div class="plant-bid">Valor: $8.000</div>
+                <div class="plant-bid">Valor: $4.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="8">
             <div class="plant_box">
                 <a href="figs/plantas/031.JPG" target="_blank">
                     <img src="figs/plantas/031.JPG" alt="Mix sedum">
@@ -993,7 +1059,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="9">
             <div class="plant_box">
                 <a href="figs/plantas/061.JPG" target="_blank">
                     <img src="figs/plantas/061.JPG" alt="Mix suculentas (+5)">
@@ -1009,7 +1075,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="20">
             <div class="plant_box">
                 <a href="figs/plantas/046.JPG" target="_blank">
                     <img src="figs/plantas/046.JPG" alt="Mix suculentas Crassula rogersii + Crasula Perforata  + Graptosedum Bronze ">
@@ -1021,11 +1087,11 @@
             <div class="plant-info">
                 <div class="plant-name">Mix suculentas Crassula rogersii + Crasula Perforata  + Graptosedum Bronze  </div>
                 <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $2.500</div>
+                <div class="plant-bid">Valor: $4.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="20">
             <div class="plant_box">
                 <a href="figs/plantas/053.JPG" target="_blank">
                     <img src="figs/plantas/053.JPG" alt="Mix suculentas Crassula rogersii + Crasula Perforata + 2">
@@ -1037,11 +1103,11 @@
             <div class="plant-info">
                 <div class="plant-name">Mix suculentas Crassula rogersii + Crasula Perforata + 2 </div>
                 <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $5.000</div>
+                <div class="plant-bid">Valor: $4.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="20">
             <div class="plant_box">
                 <a href="figs/plantas/057.JPG" target="_blank">
                     <img src="figs/plantas/057.JPG" alt="Mix suculentas Crassula rogersii + Graptosedum Bronze">
@@ -1053,27 +1119,11 @@
             <div class="plant-info">
                 <div class="plant-name">Mix suculentas Crassula rogersii + Graptosedum Bronze </div>
                 <div class="plant-description">Mix con al menos 4 suculentas macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $3.000</div>
+                <div class="plant-bid">Valor: $4.000</div>
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/111.JPG" target="_blank">
-                    <img src="figs/plantas/111.JPG" alt="Monstera Deliciosa">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Monstera Deliciosa </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $12.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="1">
             <div class="plant_box">
                 <a href="figs/plantas/110.JPG" target="_blank">
                     <img src="figs/plantas/110.JPG" alt="Monstera Deliciosa">
@@ -1089,7 +1139,23 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
+            <div class="plant_box">
+                <a href="figs/plantas/111.JPG" target="_blank">
+                    <img src="figs/plantas/111.JPG" alt="Monstera Deliciosa">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Monstera Deliciosa </div>
+                <div class="plant-description">  </div>
+                <div class="plant-bid">Valor: $12.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="2">
             <div class="plant_box">
                 <a href="figs/plantas/023.JPG" target="_blank">
                     <img src="figs/plantas/023.JPG" alt="Míx suculentas Sansevieria jade + otras suculentas">
@@ -1105,58 +1171,58 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/056.JPG" target="_blank">
-                    <img src="figs/plantas/056.JPG" alt="Míx suculentas Sempervivum arachnoideum "Siempreviva de arañas" + Sempervivum calcareum "Uña de mujer" ">
+                    <img src="figs/plantas/056.JPG" alt="Míx suculentas Sempervivum (Siempreviva) Arachnoideum 'de arañas' + Calcareum 'Uña de mujer' + Nevadense">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Míx suculentas Sempervivum arachnoideum "Siempreviva de arañas" + Sempervivum calcareum "Uña de mujer"  </div>
+                <div class="plant-name">Míx suculentas Sempervivum (Siempreviva) Arachnoideum "de arañas" + Calcareum "Uña de mujer" + Nevadense </div>
                 <div class="plant-description">Mix con al menos 4 suculentas macetero plástico pequeño  </div>
                 <div class="plant-bid">Valor: $3.000</div>
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/054.JPG" target="_blank">
-                    <img src="figs/plantas/054.JPG" alt="Míx suculentas Sempervivum arachnoideum "Siempreviva de arañas" + Sempervivum calcareum "Uña de mujer" ">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Míx suculentas Sempervivum arachnoideum "Siempreviva de arañas" + Sempervivum calcareum "Uña de mujer"  </div>
-                <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $2.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="20">
             <div class="plant_box">
                 <a href="figs/plantas/041.JPG" target="_blank">
-                    <img src="figs/plantas/041.JPG" alt="Míx suculentas Sempervivum calcareum "Uña de mujer" + 2">
+                    <img src="figs/plantas/041.JPG" alt="Míx suculentas Sempervivum (Siempreviva) Arachnoideum 'de arañas' + Calcareum 'Uña de mujer' + Nevadense">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Míx suculentas Sempervivum calcareum "Uña de mujer" + 2 </div>
+                <div class="plant-name">Míx suculentas Sempervivum (Siempreviva) Arachnoideum "de arañas" + Calcareum "Uña de mujer" + Nevadense </div>
                 <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $3.000</div>
+                <div class="plant-bid">Valor: $4.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/054.JPG" target="_blank">
+                    <img src="figs/plantas/054.JPG" alt="Míx suculentas Sempervivum (Siempreviva) Arachnoideum 'de arañas' y Calcareum 'Uña de mujer' + Crassula Muscosa">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Míx suculentas Sempervivum (Siempreviva) Arachnoideum "de arañas" y Calcareum "Uña de mujer" + Crassula Muscosa </div>
+                <div class="plant-description">Macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $4.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="3">
             <div class="plant_box">
                 <a href="figs/plantas/050.JPG" target="_blank">
-                    <img src="figs/plantas/050.JPG" alt="Opuntia Microdasys "Alas de Ángel" "Orejas Mickey" ">
+                    <img src="figs/plantas/050.JPG" alt="Opuntia Microdasys 'Alas de Ángel' 'Orejas Mickey' ">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1169,7 +1235,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="8">
             <div class="plant_box">
                 <a href="figs/plantas/058.JPG" target="_blank">
                     <img src="figs/plantas/058.JPG" alt="Opuntia monacantha de color morado">
@@ -1185,10 +1251,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/047.JPG" target="_blank">
-                    <img src="figs/plantas/047.JPG" alt="Orbea variegata "Flor de la estrella"">
+                    <img src="figs/plantas/047.JPG" alt="Orbea variegata 'Flor de la estrella'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1201,10 +1267,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/043.JPG" target="_blank">
-                    <img src="figs/plantas/043.JPG" alt="Orbea variegata "Flor de la estrella"">
+                    <img src="figs/plantas/043.JPG" alt="Orbea variegata 'Flor de la estrella'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1217,7 +1283,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="8">
             <div class="plant_box">
                 <a href="figs/plantas/020.JPG" target="_blank">
                     <img src="figs/plantas/020.JPG" alt="Oscularia deltoides + otras suculentas">
@@ -1233,10 +1299,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/001.JPG" target="_blank">
-                    <img src="figs/plantas/001.JPG" alt="Othonna Capensis "Collar de rubí"">
+                    <img src="figs/plantas/001.JPG" alt="Othonna Capensis 'Collar de rubí'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1249,10 +1315,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="9">
             <div class="plant_box">
                 <a href="figs/plantas/121.JPG" target="_blank">
-                    <img src="figs/plantas/121.JPG" alt="Oxalis triangularis "Trébol africano"">
+                    <img src="figs/plantas/121.JPG" alt="Oxalis triangularis 'Trébol africano'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1265,10 +1331,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="5">
             <div class="plant_box">
                 <a href="figs/plantas/120.JPG" target="_blank">
-                    <img src="figs/plantas/120.JPG" alt="Oxalis triangularis "Trébol africano" + 1">
+                    <img src="figs/plantas/120.JPG" alt="Oxalis triangularis 'Trébol africano' + 1">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1281,7 +1347,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="3">
             <div class="plant_box">
                 <a href="figs/plantas/112.JPG" target="_blank">
                     <img src="figs/plantas/112.JPG" alt="Peperomia Polybotrya">
@@ -1297,7 +1363,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/094.JPG" target="_blank">
                     <img src="figs/plantas/094.JPG" alt="Peperomia caperata red">
@@ -1313,7 +1379,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
             <div class="plant_box">
                 <a href="figs/plantas/117.JPG" target="_blank">
                     <img src="figs/plantas/117.JPG" alt="Philodendro Longifolio">
@@ -1329,138 +1395,10 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/065.JPG" target="_blank">
-                    <img src="figs/plantas/065.JPG" alt="Planta 065">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 065 </div>
-                <div class="plant-description">Macetero arena bajo  </div>
-                <div class="plant-bid">Valor: $2.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/069.JPG" target="_blank">
-                    <img src="figs/plantas/069.JPG" alt="Planta 069">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 069 </div>
-                <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $2.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/072.JPG" target="_blank">
-                    <img src="figs/plantas/072.JPG" alt="Planta 072">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 072 </div>
-                <div class="plant-description">Macetero plástico mediano  </div>
-                <div class="plant-bid">Valor: $5.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/089.JPG" target="_blank">
-                    <img src="figs/plantas/089.JPG" alt="Planta 089">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 089 </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $8.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/106.JPG" target="_blank">
-                    <img src="figs/plantas/106.JPG" alt="Planta 106">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 106 </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $7.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/123.JPG" target="_blank">
-                    <img src="figs/plantas/123.JPG" alt="Planta 123">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 123 </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $3.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/125.JPG" target="_blank">
-                    <img src="figs/plantas/125.JPG" alt="Planta 125">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 125 </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $3.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/126.JPG" target="_blank">
-                    <img src="figs/plantas/126.JPG" alt="Planta 126">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Planta 126 </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $3.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="1">
             <div class="plant_box">
                 <a href="figs/plantas/030.JPG" target="_blank">
-                    <img src="figs/plantas/030.JPG" alt="Portulacaria afra "Árbol de la abundancia" 1 + Othonna Capensis "Collar de rubí" ">
+                    <img src="figs/plantas/030.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 1 + Othonna Capensis 'Collar de rubí' ">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1473,10 +1411,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/128.JPG" target="_blank">
-                    <img src="figs/plantas/128.JPG" alt="Portulacaria afra "Árbol de la abundancia" 10">
+                    <img src="figs/plantas/128.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 10">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1489,10 +1427,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/035.JPG" target="_blank">
-                    <img src="figs/plantas/035.JPG" alt="Portulacaria afra "Árbol de la abundancia" 2">
+                    <img src="figs/plantas/035.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 2">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1505,10 +1443,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/038.JPG" target="_blank">
-                    <img src="figs/plantas/038.JPG" alt="Portulacaria afra "Árbol de la abundancia" 3">
+                    <img src="figs/plantas/038.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 3">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1521,10 +1459,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/067.JPG" target="_blank">
-                    <img src="figs/plantas/067.JPG" alt="Portulacaria afra "Árbol de la abundancia" 4">
+                    <img src="figs/plantas/067.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 4">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1537,10 +1475,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/068.JPG" target="_blank">
-                    <img src="figs/plantas/068.JPG" alt="Portulacaria afra "Árbol de la abundancia" 5">
+                    <img src="figs/plantas/068.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 5">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1553,10 +1491,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/074.JPG" target="_blank">
-                    <img src="figs/plantas/074.JPG" alt="Portulacaria afra "Árbol de la abundancia" 6">
+                    <img src="figs/plantas/074.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 6">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1569,10 +1507,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/075.JPG" target="_blank">
-                    <img src="figs/plantas/075.JPG" alt="Portulacaria afra "Árbol de la abundancia" 7">
+                    <img src="figs/plantas/075.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 7">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1585,10 +1523,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="60">
             <div class="plant_box">
                 <a href="figs/plantas/076.JPG" target="_blank">
-                    <img src="figs/plantas/076.JPG" alt="Portulacaria afra "Árbol de la abundancia" 8">
+                    <img src="figs/plantas/076.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 8">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1601,10 +1539,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="2">
             <div class="plant_box">
                 <a href="figs/plantas/100.JPG" target="_blank">
-                    <img src="figs/plantas/100.JPG" alt="Portulacaria afra "Árbol de la abundancia" 9">
+                    <img src="figs/plantas/100.JPG" alt="Portulacaria afra 'Árbol de la abundancia' 9">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1617,7 +1555,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="1">
             <div class="plant_box">
                 <a href="figs/plantas/113.JPG" target="_blank">
                     <img src="figs/plantas/113.JPG" alt="Potus">
@@ -1633,42 +1571,10 @@
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/002.JPG" target="_blank">
-                    <img src="figs/plantas/002.JPG" alt="Rhombophyllum dolabriforme "Cuernos de Alce"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Rhombophyllum dolabriforme "Cuernos de Alce" </div>
-                <div class="plant-description">Suculenta, tiene flores amarillas, macetero de cerámica  </div>
-                <div class="plant-bid">Valor: $2.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/081.JPG" target="_blank">
-                    <img src="figs/plantas/081.JPG" alt="Rhombophyllum dolabriforme "Cuernos de Alce"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Rhombophyllum dolabriforme "Cuernos de Alce" </div>
-                <div class="plant-description">Macetero plástico grande, planta muy establecida, tiene más de 4 años  </div>
-                <div class="plant-bid">Valor: $12.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/007.JPG" target="_blank">
-                    <img src="figs/plantas/007.JPG" alt="Rhombophyllum dolabriforme "Cuernos de Alce"">
+                    <img src="figs/plantas/007.JPG" alt="Rhombophyllum dolabriforme 'Cuernos de Alce'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1681,7 +1587,39 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/002.JPG" target="_blank">
+                    <img src="figs/plantas/002.JPG" alt="Rhombophyllum dolabriforme 'Cuernos de Alce'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Rhombophyllum dolabriforme "Cuernos de Alce" </div>
+                <div class="plant-description">Suculenta, tiene flores amarillas, macetero de cerámica  </div>
+                <div class="plant-bid">Valor: $2.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="1">
+            <div class="plant_box">
+                <a href="figs/plantas/081.JPG" target="_blank">
+                    <img src="figs/plantas/081.JPG" alt="Rhombophyllum dolabriforme 'Cuernos de Alce'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Rhombophyllum dolabriforme "Cuernos de Alce" </div>
+                <div class="plant-description">Macetero plástico grande, planta muy establecida, tiene más de 4 años  </div>
+                <div class="plant-bid">Valor: $12.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="5">
             <div class="plant_box">
                 <a href="figs/plantas/098.JPG" target="_blank">
                     <img src="figs/plantas/098.JPG" alt="San Pedro">
@@ -1697,26 +1635,26 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="50">
             <div class="plant_box">
                 <a href="figs/plantas/073.JPG" target="_blank">
-                    <img src="figs/plantas/073.JPG" alt="Sansevieria zeylanica">
+                    <img src="figs/plantas/073.JPG" alt="Sansevieria zeylanica ">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Sansevieria zeylanica </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $1.000</div>
+                <div class="plant-name">Sansevieria zeylanica  </div>
+                <div class="plant-description">Macetero plástico mediano 68 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $10.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/104.JPG" target="_blank">
-                    <img src="figs/plantas/104.JPG" alt="Sansevieria zeylanica "Lengua de suegra"">
+                    <img src="figs/plantas/104.JPG" alt="Sansevieria zeylanica 'Lengua de suegra'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1724,15 +1662,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" </div>
-                <div class="plant-description">  </div>
-                <div class="plant-bid">Valor: $5.000</div>
+                <div class="plant-description">Macetero cerámica mini 13 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $2.500</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="50">
             <div class="plant_box">
                 <a href="figs/plantas/085.JPG" target="_blank">
-                    <img src="figs/plantas/085.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 1">
+                    <img src="figs/plantas/085.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 1">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1740,15 +1678,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 1 </div>
-                <div class="plant-description">Macetero arena mediano  </div>
-                <div class="plant-bid">Valor: $7.000</div>
+                <div class="plant-description">Macetero arena grande 55 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $10.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="1">
             <div class="plant_box">
                 <a href="figs/plantas/086.JPG" target="_blank">
-                    <img src="figs/plantas/086.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 2">
+                    <img src="figs/plantas/086.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 2">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1756,15 +1694,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 2 </div>
-                <div class="plant-description">Macetero plástico mediano  </div>
-                <div class="plant-bid">Valor: $7.000</div>
+                <div class="plant-description">Macetero plástico grande 80 cm 2 brotes  </div>
+                <div class="plant-bid">Valor: $12.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="50">
             <div class="plant_box">
                 <a href="figs/plantas/087.JPG" target="_blank">
-                    <img src="figs/plantas/087.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 3">
+                    <img src="figs/plantas/087.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 3">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1772,15 +1710,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 3 </div>
-                <div class="plant-description">Macetero plástico mediano  </div>
-                <div class="plant-bid">Valor: $7.000</div>
+                <div class="plant-description">Macetero plástico mediano 55 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $8.500</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
             <div class="plant_box">
                 <a href="figs/plantas/088.JPG" target="_blank">
-                    <img src="figs/plantas/088.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 4">
+                    <img src="figs/plantas/088.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 4">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1788,15 +1726,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 4 </div>
-                <div class="plant-description">Macetero mediano  </div>
-                <div class="plant-bid">Valor: $9.000</div>
+                <div class="plant-description">Macetero mediano 43 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $8.500</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="50">
             <div class="plant_box">
                 <a href="figs/plantas/090.JPG" target="_blank">
-                    <img src="figs/plantas/090.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 5">
+                    <img src="figs/plantas/090.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 5">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1804,15 +1742,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 5 </div>
-                <div class="plant-description">Macetero plástico mediano  </div>
-                <div class="plant-bid">Valor: $4.000</div>
+                <div class="plant-description">Macetero plástico mediano 32 cm 1 brote 1 hoja + otra suculenta  </div>
+                <div class="plant-bid">Valor: $5.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="50">
             <div class="plant_box">
                 <a href="figs/plantas/091.JPG" target="_blank">
-                    <img src="figs/plantas/091.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 6">
+                    <img src="figs/plantas/091.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 6">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1820,15 +1758,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 6 </div>
-                <div class="plant-description">Macetero taza  </div>
+                <div class="plant-description">Macetero taza con agujero 22 cm 1 brote  </div>
                 <div class="plant-bid">Valor: $3.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="50">
             <div class="plant_box">
                 <a href="figs/plantas/092.JPG" target="_blank">
-                    <img src="figs/plantas/092.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 7">
+                    <img src="figs/plantas/092.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 7">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1836,15 +1774,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 7 </div>
-                <div class="plant-description">Macetero plástico pequeño  </div>
-                <div class="plant-bid">Valor: $2.000</div>
+                <div class="plant-description">Macetero plástico pequeño 5 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $1.500</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/115.JPG" target="_blank">
-                    <img src="figs/plantas/115.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 8">
+                    <img src="figs/plantas/115.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 8">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1852,15 +1790,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 8 </div>
-                <div class="plant-description">Macetero Vidrio  </div>
-                <div class="plant-bid">Valor: $5.000</div>
+                <div class="plant-description">Macetero Vidrio vaso 28 cm 1 brote  </div>
+                <div class="plant-bid">Valor: $4.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
             <div class="plant_box">
                 <a href="figs/plantas/116.JPG" target="_blank">
-                    <img src="figs/plantas/116.JPG" alt="Sansevieria zeylanica "Lengua de suegra" 9">
+                    <img src="figs/plantas/116.JPG" alt="Sansevieria zeylanica 'Lengua de suegra' 9">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1868,15 +1806,15 @@
             </div>
             <div class="plant-info">
                 <div class="plant-name">Sansevieria zeylanica "Lengua de suegra" 9 </div>
-                <div class="plant-description">Macetero plástico mediano  </div>
-                <div class="plant-bid">Valor: $7.000</div>
+                <div class="plant-description">Macetero plástico mediano 68 cm 2 brotes  </div>
+                <div class="plant-bid">Valor: $8.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="15">
             <div class="plant_box">
                 <a href="figs/plantas/080.JPG" target="_blank">
-                    <img src="figs/plantas/080.JPG" alt="Schlumbergera "Pata de Jaiba"">
+                    <img src="figs/plantas/080.JPG" alt="Schlumbergera 'Pata de Jaiba'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1889,58 +1827,26 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
-                <a href="figs/plantas/029.JPG" target="_blank">
-                    <img src="figs/plantas/029.JPG" alt="Sempervivum arachnoideum "Siempreviva de arañas"">
+                <a href="figs/plantas/065.JPG" target="_blank">
+                    <img src="figs/plantas/065.JPG" alt="Sempervivum Nevadense y Calcareum 'Uña de mujer' + Oscularia deltoides">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Sempervivum arachnoideum "Siempreviva de arañas" </div>
-                <div class="plant-description">Macetero pequeño  </div>
-                <div class="plant-bid">Valor: $1.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/027.JPG" target="_blank">
-                    <img src="figs/plantas/027.JPG" alt="Sempervivum arachnoideum "Siempreviva de arañas"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Sempervivum arachnoideum "Siempreviva de arañas" </div>
-                <div class="plant-description">Macetero pequeño  </div>
-                <div class="plant-bid">Valor: $1.500</div>
-            </div>
-        </div>
- 
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/003.JPG" target="_blank">
-                    <img src="figs/plantas/003.JPG" alt="Sempervivum arachnoideum "Siempreviva de arañas"">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Sempervivum arachnoideum "Siempreviva de arañas" </div>
-                <div class="plant-description">Suculenta, macetero plástico pequeño  </div>
+                <div class="plant-name">Sempervivum Nevadense y Calcareum "Uña de mujer" + Oscularia deltoides </div>
+                <div class="plant-description">Macetero arena bajo  </div>
                 <div class="plant-bid">Valor: $2.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/052.JPG" target="_blank">
-                    <img src="figs/plantas/052.JPG" alt="Sempervivum arachnoideum "Siempreviva de arañas"">
+                    <img src="figs/plantas/052.JPG" alt="Sempervivum arachnoideum 'Siempreviva de arañas'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1953,26 +1859,58 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
-                <a href="figs/plantas/040.JPG" target="_blank">
-                    <img src="figs/plantas/040.JPG" alt="Sempervivum calcareum  "Uña de mujer"">
+                <a href="figs/plantas/029.JPG" target="_blank">
+                    <img src="figs/plantas/029.JPG" alt="Sempervivum arachnoideum 'Siempreviva de arañas'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Sempervivum calcareum  "Uña de mujer" </div>
-                <div class="plant-description">Macetero mediano, bien establecida  </div>
-                <div class="plant-bid">Valor: $4.500</div>
+                <div class="plant-name">Sempervivum arachnoideum "Siempreviva de arañas" </div>
+                <div class="plant-description">Macetero pequeño  </div>
+                <div class="plant-bid">Valor: $1.500</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/027.JPG" target="_blank">
+                    <img src="figs/plantas/027.JPG" alt="Sempervivum arachnoideum 'Siempreviva de arañas'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Sempervivum arachnoideum "Siempreviva de arañas" </div>
+                <div class="plant-description">Macetero pequeño  </div>
+                <div class="plant-bid">Valor: $1.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/003.JPG" target="_blank">
+                    <img src="figs/plantas/003.JPG" alt="Sempervivum arachnoideum 'Siempreviva de arañas'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Sempervivum arachnoideum "Siempreviva de arañas" </div>
+                <div class="plant-description">Suculenta, macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $2.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/044.JPG" target="_blank">
-                    <img src="figs/plantas/044.JPG" alt="Sempervivum calcareum  "Uña de mujer"">
+                    <img src="figs/plantas/044.JPG" alt="Sempervivum calcareum  'Uña de mujer'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -1985,10 +1923,42 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="8">
+            <div class="plant_box">
+                <a href="figs/plantas/040.JPG" target="_blank">
+                    <img src="figs/plantas/040.JPG" alt="Sempervivum calcareum  'Uña de mujer'">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Sempervivum calcareum  "Uña de mujer" </div>
+                <div class="plant-description">Macetero mediano, bien establecida  </div>
+                <div class="plant-bid">Valor: $4.500</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/069.JPG" target="_blank">
+                    <img src="figs/plantas/069.JPG" alt="Sempervivum nevadense">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Sempervivum nevadense </div>
+                <div class="plant-description">Macetero plástico pequeño  </div>
+                <div class="plant-bid">Valor: $2.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="5">
             <div class="plant_box">
                 <a href="figs/plantas/037.JPG" target="_blank">
-                    <img src="figs/plantas/037.JPG" alt="Senecio Herreianus "Cuerda de sandía"">
+                    <img src="figs/plantas/037.JPG" alt="Senecio Herreianus 'Cuerda de sandía'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -2001,10 +1971,10 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="2">
             <div class="plant_box">
                 <a href="figs/plantas/034.JPG" target="_blank">
-                    <img src="figs/plantas/034.JPG" alt="Senecio Herreianus "Cuerda de sandía"">
+                    <img src="figs/plantas/034.JPG" alt="Senecio Herreianus 'Cuerda de sandía'">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
@@ -2017,7 +1987,7 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="4">
             <div class="plant_box">
                 <a href="figs/plantas/079.JPG" target="_blank">
                     <img src="figs/plantas/079.JPG" alt="Singonio variegado">
@@ -2033,81 +2003,97 @@
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
-                <a href="figs/plantas/129.JPG" target="_blank">
-                    <img src="figs/plantas/129.JPG" alt="Tradescantia">
+                <a href="figs/plantas/123.JPG" target="_blank">
+                    <img src="figs/plantas/123.JPG" alt="Tradescantia mini verde">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Tradescantia </div>
-                <div class="plant-description">  </div>
+                <div class="plant-name">Tradescantia mini verde </div>
+                <div class="plant-description">Macetero plástico mediano  </div>
                 <div class="plant-bid">Valor: $3.000</div>
             </div>
         </div>
  
-        <div class="plant">
-            <div class="plant_box">
-                <a href="figs/plantas/033.JPG" target="_blank">
-                    <img src="figs/plantas/033.JPG" alt="Tradescantia fluminensis variegata (verde y blanca)">
-                    <a href="http://www.google.com" target="_blank" class="icon-link">
-                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
-                    </a>
-                </a>
-            </div>
-            <div class="plant-info">
-                <div class="plant-name">Tradescantia fluminensis variegata (verde y blanca) </div>
-                <div class="plant-description">Macetero cerámica para pared  </div>
-                <div class="plant-bid">Valor: $7.000</div>
-            </div>
-        </div>
- 
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
                 <a href="figs/plantas/036.JPG" target="_blank">
-                    <img src="figs/plantas/036.JPG" alt="Tradescantia fluminensis variegata (verde, morado, blanca)">
+                    <img src="figs/plantas/036.JPG" alt="Tradescantia variegada verde y morado">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Tradescantia fluminensis variegata (verde, morado, blanca) </div>
+                <div class="plant-name">Tradescantia variegada verde y morado </div>
                 <div class="plant-description">Macetero plástico pequeño  </div>
                 <div class="plant-bid">Valor: $1.500</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="100">
             <div class="plant_box">
-                <a href="figs/plantas/127.JPG" target="_blank">
-                    <img src="figs/plantas/127.JPG" alt="Tradescantia zebrina">
+                <a href="figs/plantas/129.JPG" target="_blank">
+                    <img src="figs/plantas/129.JPG" alt="Tradescantia verde">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Tradescantia zebrina </div>
+                <div class="plant-name">Tradescantia verde </div>
                 <div class="plant-description">  </div>
                 <div class="plant-bid">Valor: $3.000</div>
             </div>
         </div>
  
-        <div class="plant">
+        <div class="plant" data-ranking="12">
             <div class="plant_box">
-                <a href="figs/plantas/130.JPG" target="_blank">
-                    <img src="figs/plantas/130.JPG" alt="Tradescantia zebrina + Tradescantia fluminense">
+                <a href="figs/plantas/033.JPG" target="_blank">
+                    <img src="figs/plantas/033.JPG" alt="Tradescantia verde y blanca">
                     <a href="http://www.google.com" target="_blank" class="icon-link">
                         <img class="icon-overlay" src="figs/add.png" alt="Icono" />
                     </a>
                 </a>
             </div>
             <div class="plant-info">
-                <div class="plant-name">Tradescantia zebrina + Tradescantia fluminense </div>
+                <div class="plant-name">Tradescantia verde y blanca </div>
+                <div class="plant-description">Macetero cerámica para pared  </div>
+                <div class="plant-bid">Valor: $7.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="3">
+            <div class="plant_box">
+                <a href="figs/plantas/130.JPG" target="_blank">
+                    <img src="figs/plantas/130.JPG" alt="Tradescantia verde, verde-morada y blanca-verde">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Tradescantia verde, verde-morada y blanca-verde </div>
+                <div class="plant-description">  </div>
+                <div class="plant-bid">Valor: $3.000</div>
+            </div>
+        </div>
+ 
+        <div class="plant" data-ranking="100">
+            <div class="plant_box">
+                <a href="figs/plantas/127.JPG" target="_blank">
+                    <img src="figs/plantas/127.JPG" alt="Tradescantia verde-morada">
+                    <a href="http://www.google.com" target="_blank" class="icon-link">
+                        <img class="icon-overlay" src="figs/add.png" alt="Icono" />
+                    </a>
+                </a>
+            </div>
+            <div class="plant-info">
+                <div class="plant-name">Tradescantia verde-morada </div>
                 <div class="plant-description">  </div>
                 <div class="plant-bid">Valor: $3.000</div>
             </div>

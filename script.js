@@ -2,27 +2,27 @@ document.getElementById('sortOptions').addEventListener('change', function() {
     sortProducts(this.value);
 });
 
-document.getElementById('itemsPerPage').addEventListener('change', function() {
-    itemsPerPage = parseInt(this.value);
-    currentPage = 1;
-    renderCatalog();
-});
+// document.getElementById('itemsPerPage').addEventListener('change', function() {
+//     itemsPerPage = parseInt(this.value);
+//     currentPage = 1;
+//     renderCatalog();
+// });
 
-let currentPage = 1;
-let itemsPerPage = 10; // valor inicial
-let totalItems = 0; // Variable global para mantener el conteo total de items
+// let currentPage = 1;
+// let itemsPerPage = 10; // valor inicial
+// let totalItems = 0; // Variable global para mantener el conteo total de items
 
-function renderCatalog() {
-    const plants = Array.from(document.querySelectorAll('.plant'));
-    totalItems = plants.length; // Actualiza el conteo total
-    const start = (currentPage - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    const visibleItems = plants.slice(start, end);
+// function renderCatalog() {
+//     const plants = Array.from(document.querySelectorAll('.plant'));
+//     totalItems = plants.length; // Actualiza el conteo total
+//     const start = (currentPage - 1) * itemsPerPage;
+//     const end = start + itemsPerPage;
+//     const visibleItems = plants.slice(start, end);
 
-    document.querySelector('.catalog').innerHTML = '';
-    visibleItems.forEach(plant => document.querySelector('.catalog').appendChild(plant));
-    updatePagination();
-}
+//     document.querySelector('.catalog').innerHTML = '';
+//     visibleItems.forEach(plant => document.querySelector('.catalog').appendChild(plant));
+//     updatePagination();
+// }
 
 function sortProducts(method) {
     let plants = Array.from(document.querySelectorAll('.plant'));
@@ -34,10 +34,11 @@ function sortProducts(method) {
         let aRanking = parseInt(a.dataset.ranking || 0);
         let bRanking = parseInt(b.dataset.ranking || 0);
         
+        console.log('Ordenando');
 
         switch (method) {
             case 'recommended':
-                console.log(`Ordenando por ranking: ${aRanking} vs ${bRanking}`);
+                console.log('Ordenando por ranking: ${aRanking} vs ${bRanking}');
                 return aRanking - bRanking; // Ordena por ranking ascendente
             case 'priceAsc':
                 return parseFloat(aValue) - parseFloat(bValue); 
@@ -52,22 +53,22 @@ function sortProducts(method) {
 
     document.querySelector('.catalog').innerHTML = '';
     plants.forEach(plant => document.querySelector('.catalog').appendChild(plant));
-    renderCatalog();
+    // renderCatalog();
 }
 
 
-function updatePagination() {
-    let totalPages = Math.ceil(totalItems / itemsPerPage);
-    document.getElementById('pageInfo').textContent = `Página ${currentPage} de ${totalPages}`;
-}
+// function updatePagination() {
+//     let totalPages = Math.ceil(totalItems / itemsPerPage);
+//     document.getElementById('pageInfo').textContent = `Página ${currentPage} de ${totalPages}`;
+// }
 
-function changePage(direction) {
-    let totalPages = Math.ceil(totalItems / itemsPerPage);
-    currentPage += direction;
-    if (currentPage < 1) currentPage = 1;
-    if (currentPage > totalPages) currentPage = totalPages;
-    renderCatalog();
-}
+// function changePage(direction) {
+//     let totalPages = Math.ceil(totalItems / itemsPerPage);
+//     currentPage += direction;
+//     if (currentPage < 1) currentPage = 1;
+//     if (currentPage > totalPages) currentPage = totalPages;
+//     renderCatalog();
+// }
 
 function filterPlants() {
     let searchInput = document.getElementById('searchBox').value;
@@ -95,5 +96,5 @@ function normalizeText(text) {
 window.onload = () => {
     // Usa 'recommended' directamente para forzar la clasificación por recomendados.
     sortProducts('recommended');
-    renderCatalog();
+    // renderCatalog();
 };
