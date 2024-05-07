@@ -31,10 +31,16 @@ function sortProducts(method) {
         let bValue = b.querySelector('.plant-bid').textContent.replace('Valor: $', '');
         let aName = a.querySelector('.plant-name').textContent.trim();
         let bName = b.querySelector('.plant-name').textContent.trim();
+        let aRanking = parseInt(a.dataset.ranking || 0);
+        let bRanking = parseInt(b.dataset.ranking || 0);
+        
 
         switch (method) {
+            case 'recommended':
+                console.log(`Ordenando por ranking: ${aRanking} vs ${bRanking}`);
+                return aRanking - bRanking; // Ordena por ranking ascendente
             case 'priceAsc':
-                return parseFloat(aValue) - parseFloat(bValue);
+                return parseFloat(aValue) - parseFloat(bValue); 
             case 'priceDesc':
                 return parseFloat(bValue) - parseFloat(aValue);
             case 'nameAsc':
@@ -44,11 +50,11 @@ function sortProducts(method) {
         }
     });
 
-    // Reemplaza todos los elementos en .catalog con el nuevo orden
     document.querySelector('.catalog').innerHTML = '';
     plants.forEach(plant => document.querySelector('.catalog').appendChild(plant));
-    renderCatalog(); // Re-renderiza para aplicar paginación sobre los elementos ordenados
+    renderCatalog();
 }
+
 
 function updatePagination() {
     let totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -87,6 +93,7 @@ function normalizeText(text) {
 }
 
 window.onload = () => {
-    sortProducts('nameAsc'); // Orden alfabético por defecto
+    // Usa 'recommended' directamente para forzar la clasificación por recomendados.
+    sortProducts('recommended');
     renderCatalog();
 };
